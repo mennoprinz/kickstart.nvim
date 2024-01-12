@@ -58,6 +58,17 @@ vim.o.termguicolors = true
 -- Never have less than 8 lines top/bottom
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
-vim.o.isfname:append("@-@")
+
+
+-- [[ Highlight on yank ]]
+-- See `:help vim.highlight.on_yank()`
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+  group = highlight_group,
+  pattern = '*',
+})
 
 return {}
