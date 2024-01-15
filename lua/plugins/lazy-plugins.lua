@@ -101,12 +101,11 @@ return {
     },
   },
   {
-    'nvim-tree/nvim-tree.lua',
-    dependencies = {
-      'nvim-tree/nvim-web-devicons',
-    }
+    'lewis6991/gitsigns.nvim',
   },
   {
-    'lewis6991/gitsigns.nvim',
+    'ms-jpq/chadtree',
+    branch = 'chad',
   }
 }
+
