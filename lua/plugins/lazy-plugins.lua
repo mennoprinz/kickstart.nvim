@@ -117,6 +117,6 @@ return {
   },
   {
     'mfussenegger/nvim-lint',
-  }
+  },
 }
 
