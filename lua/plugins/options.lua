@@ -8,7 +8,6 @@ vim.o.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
-
 -- indent @ 4
 vim.o.tabstop = 4
 vim.o.softtabstop = 4

@@ -112,5 +112,11 @@ return {
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+  {
+    'mhartington/formatter.nvim',
+  },
+  {
+    'mfussenegger/nvim-lint',
+  }
 }
 
