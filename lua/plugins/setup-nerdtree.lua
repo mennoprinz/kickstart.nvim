@@ -1,4 +1,6 @@
--- nnoremap <leader>n :NERDTreeFocus<CR>
--- nnoremap <C-n> :NERDTree<CR>
--- nnoremap <C-t> :NERDTreeToggle<CR>
--- nnoremap <C-f> :NERDTreeFind<CR>
+return {
+    vim.keymap.set('n', '<C-n>', '<cmd>NERDTree<cr>');
+    vim.keymap.set('n', '<leader>n', '<cmd>NERDTreeFocus<cr>');
+    vim.keymap.set('n', '<C-t>', '<cmd>NERDTreeToggle<cr>');
+    vim.keymap.set('n', '<C-f>', '<cmd>NERDTreeFind<cr>');
+}
