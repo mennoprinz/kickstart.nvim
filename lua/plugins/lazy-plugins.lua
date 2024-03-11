@@ -103,10 +103,6 @@ return {
     {
         'lewis6991/gitsigns.nvim',
     },
-    -- {
-    --   'ms-jpq/chadtree',
-    --   branch = 'chad',
-    -- },
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
@@ -119,6 +115,13 @@ return {
         'mfussenegger/nvim-lint',
     },
     {
-        'preservim/nerdtree'
+        'preservim/nerdtree',
     },
+    {
+        dir = "~/Sites/localhost/personal/remember-stuff",
+        name = "remember-stuff",
+        config = function ()
+            require('remember-stuff')
+        end
+    }
 }
