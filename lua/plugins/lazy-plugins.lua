@@ -117,11 +117,11 @@ return {
     {
         'preservim/nerdtree',
     },
-    {
-        dir = "~/Sites/localhost/personal/remember-stuff",
-        name = "remember-stuff",
-        config = function ()
-            require('remember-stuff')
-        end
-    }
+    -- {
+    --     dir = "~/Sites/localhost/personal/remember-stuff",
+    --     name = "remember-stuff",
+    --     config = function ()
+    --         require('remember-stuff')
+    --     end
+    -- }
 }
