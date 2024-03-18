@@ -47,8 +47,5 @@ require("formatter").setup {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }
   },
-  php = {
-    require("formatter.filetypes.php").pint,
-  }
 }
 return {}

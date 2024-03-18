@@ -101,9 +101,6 @@ return {
         },
     },
     {
-        'lewis6991/gitsigns.nvim',
-    },
-    {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
@@ -111,12 +108,9 @@ return {
     {
         'mhartington/formatter.nvim',
     },
-    {
-        'mfussenegger/nvim-lint',
-    },
-    {
-        'preservim/nerdtree',
-    },
+    -- {
+    --     'preservim/nerdtree',
+    -- },
     -- {
     --     dir = "~/Sites/localhost/personal/remember-stuff",
     --     name = "remember-stuff",
