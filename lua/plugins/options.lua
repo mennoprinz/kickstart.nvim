@@ -6,6 +6,7 @@
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
+
 -- Make line numbers default
 vim.wo.number = true
 -- indent @ 4

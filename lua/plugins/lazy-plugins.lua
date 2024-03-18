@@ -41,12 +41,12 @@ return {
     },
     -- Useful plugin to show you pending keybinds.
     { 'folke/which-key.nvim',  opts = {} },
-    {
-        -- Theme inspired by Atom
-        'navarasu/onedark.nvim',
+    { 
+        "catppuccin/nvim", 
+        name = "catppuccin", 
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'onedark'
+            vim.cmd.colorscheme 'catppuccin'
         end,
     },
     {
@@ -117,5 +117,21 @@ return {
     --     config = function ()
     --         require('remember-stuff')
     --     end
-    -- }
+    {
+        "christoomey/vim-tmux-navigator",
+        cmd = {
+            "TmuxNavigateLeft",
+            "TmuxNavigateDown",
+            "TmuxNavigateUp",
+            "TmuxNavigateRight",
+            "TmuxNavigatePrevious",
+        },
+        keys = {
+            { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+            { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+        },
+    } -- }
 }
