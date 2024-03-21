@@ -41,12 +41,11 @@ return {
     },
     -- Useful plugin to show you pending keybinds.
     { 'folke/which-key.nvim',  opts = {} },
-    { 
-        "catppuccin/nvim", 
-        name = "catppuccin", 
+    {
+        'navarasu/onedark.nvim',
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'catppuccin'
+            vim.cmd.colorscheme 'onedark'
         end,
     },
     {
@@ -108,9 +107,9 @@ return {
     {
         'mhartington/formatter.nvim',
     },
-    -- {
-    --     'preservim/nerdtree',
-    -- },
+    {
+        'preservim/nerdtree',
+    },
     -- {
     --     dir = "~/Sites/localhost/personal/remember-stuff",
     --     name = "remember-stuff",
@@ -133,5 +132,19 @@ return {
             { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
-    } -- }
+    },
+    -- {
+    --     "kdheepak/lazygit.nvim",
+    -- 	cmd = {
+    -- 		"LazyGit",
+    -- 		"LazyGitConfig",
+    -- 		"LazyGitCurrentFile",
+    -- 		"LazyGitFilter",
+    -- 		"LazyGitFilterCurrentFile",
+    -- 	},
+    --     -- optional for floating window border decoration
+    --     dependencies = {
+    --         "nvim-lua/plenary.nvim",
+    --     },
+    -- }
 }
