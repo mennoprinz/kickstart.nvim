@@ -1,6 +1,7 @@
 return {
     -- Git stuff
     'tpope/vim-fugitive',
+    'lewis6991/gitsigns.nvim',
 
     -- Get better in vim
     'ThePrimeagen/vim-be-good',
