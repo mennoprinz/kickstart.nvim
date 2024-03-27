@@ -43,10 +43,10 @@ return {
     -- Useful plugin to show you pending keybinds.
     { 'folke/which-key.nvim',  opts = {} },
     {
-        'navarasu/onedark.nvim',
+        "xiantang/darcula-dark.nvim",
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'onedark'
+            vim.cmd.colorscheme 'darcula-dark'
         end,
     },
     {
