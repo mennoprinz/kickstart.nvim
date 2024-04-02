@@ -8,6 +8,7 @@ return {
 
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
+    'mfussenegger/nvim-lint',
     {
         -- LSP Configuration & Plugins
         'neovim/nvim-lspconfig',
