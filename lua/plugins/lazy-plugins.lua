@@ -8,7 +8,7 @@ return {
 
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
-    'mfussenegger/nvim-lint',
+    -- 'mfussenegger/nvim-lint',
     {
         -- LSP Configuration & Plugins
         'neovim/nvim-lspconfig',
@@ -44,10 +44,13 @@ return {
     -- Useful plugin to show you pending keybinds.
     { 'folke/which-key.nvim',  opts = {} },
     {
-        "xiantang/darcula-dark.nvim",
+        "rebelot/kanagawa.nvim",
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'darcula-dark'
+            -- vim.cmd("colorscheme kanagawa-wave")
+            -- vim.cmd("colorscheme kanagawa-dragon")
+            -- vim.cmd("colorscheme kanagawa-lotus")
+            vim.cmd.colorscheme 'kanagawa-wave'
         end,
     },
     {
@@ -74,6 +77,7 @@ return {
 
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {} },
+    'EmranMR/tree-sitter-blade',
     {
         -- Highlight, edit, and navigate code
         'nvim-treesitter/nvim-treesitter',
@@ -148,5 +152,4 @@ return {
     --     dependencies = {
     --         "nvim-lua/plenary.nvim",
     --     },
-    -- }
 }
